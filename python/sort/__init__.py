@@ -17,10 +17,11 @@ class AbstractSort(object):
         return list(new_list)
 
     @classmethod
-    def main(cls, run_num=None):
+    def main(cls, run_num=None, list_len=None):
         run_num = run_num or random.randint(1, 100)
+        list_len = list_len or random.randint(5, 100)
         for i in range(0, run_num):
-            source = cls.generation_list(random.randint(5, 100))
+            source = cls.generation_list(list_len)
             print source
             begin = time.time()
             cls.sort(source)

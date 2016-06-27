@@ -23,8 +23,9 @@ abstract class AbstractSort
 	public static function main()
 	{
 		$testNumber = empty($_SERVER['argv'][1])? mt_rand(1, 5) : $_SERVER['argv'][1];
+		$arrayLength = empty($_SERVER['argv'][2])? mt_rand(15, 30): $_SERVER['argv'][2];
 		for ($i = 0; $i < $testNumber; $i++) {
-			$source = static::generationArray(mt_rand(5, 100));
+			$source = static::generationArray($arrayLength);
 			echo static::toString($source), "\n";
 
 			$begin = microtime(true);

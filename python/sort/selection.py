@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 from sort import AbstractSort
 
 
@@ -16,8 +15,3 @@ class SelectionSort(AbstractSort):
             tmp = origin[i]
             origin[i] = origin[min_index]
             origin[min_index] = tmp
-
-
-if __name__ == "__main__":
-    SelectionSort.main()
-    sys.exit(0)

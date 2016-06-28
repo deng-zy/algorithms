@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 from sort import AbstractSort
 
 
@@ -14,6 +13,3 @@ class InsertSort(AbstractSort):
                     origin[j] = origin[j - 1]
                     origin[j - 1] = tmp
 
-if __name__ == "__main__":
-    InsertSort.main()
-    sys.exit(0)

@@ -8,11 +8,13 @@ class Bubble extends AbstractSort
 		for ($i = 0; $i < $length; $i++) {
 
 			for ($j = 0; $j < $length - 1; $j++) {
+
 				if ($input[$j] > $input[$j + 1]) {
 					$tmp = $input[$j + 1];
 					$input[$j + 1] = $input[$j];
 					$input[$j] = $tmp;
 				}
+				
 			}
 
 		}

@@ -18,5 +18,3 @@ class Insert extends AbstractSort
 	}
 
 }
-
-Insert::main();

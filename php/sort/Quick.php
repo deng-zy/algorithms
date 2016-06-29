@@ -39,5 +39,3 @@ class Quick extends AbstractSort
 	    self::_quick($input, $i+1, $right);
 	}
 }
-
-Quick::main();

@@ -22,5 +22,3 @@ class Bubble extends AbstractSort
 		return $input;
 	}
 }
-
-Bubble::main();

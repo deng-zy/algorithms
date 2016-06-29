@@ -28,5 +28,3 @@ class Shell extends AbstractSort
 		return $input;
 	}
 }
-
-Shell::main();

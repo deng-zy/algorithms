@@ -19,5 +19,3 @@ class Selection extends AbstractSort
 		return $input;
 	}
 }
-
-Selection::main();

@@ -20,10 +20,11 @@ abstract class AbstractSort
 		return sprintf("[%s]", implode(", ",  $origin));
 	}
 
-	public static function main()
+	public static function main($testNumber=null, $arrayLength=null)
 	{
-		$testNumber = empty($_SERVER['argv'][1])? mt_rand(1, 5) : $_SERVER['argv'][1];
-		$arrayLength = empty($_SERVER['argv'][2])? mt_rand(15, 30): $_SERVER['argv'][2];
+		$testNumber = empty($testNumber)? 1: $testNumber;
+		$arrayLength = empty($arrayLength)? 10: $arrayLength;
+
 		for ($i = 0; $i < $testNumber; $i++) {
 			$source = static::generationArray($arrayLength);
 			echo static::toString($source), "\n";
